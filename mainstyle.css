@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.laranja{
+    color: orange;
+}
+.tituloDestaque1{
+    font-size: 3rem;
+}
+
+section{
+    color: #fff;
+    min-height: 100vh;
+    background-color: rgb(32, 32, 32);
+}
+
+section:nth-child(even){
+    color: #fff;
+    background-color: rgb(51, 51, 51);
+}
+footer{
+    color: #fff;
+    min-height: 25vh;
+    background-color: rgb(32, 32, 32);
+}
+/* menu */
+section.cabeca {
+    padding-top: 5vh;
+    background-color: #484848;
+}
+.navHead {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 1px 10px; */
+    position: fixed;
+    min-width: 100vw;
+    top: 0;
+    padding-top: 20px;
+    background-color: #484848;
+    z-index: 9;
+}
+.menuHorizontal{
+    display: flex;
+    gap: 1.9rem;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.menuHorizontal ul {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    color: #fff;
+}
+.menuHorizontal ul a {
+    color: #fff;
+}
+.listButtons{
+    border-left: 2px solid #fff;
+    padding-left: 1rem;
+}
+.listButtons img{
+    width: 1rem;
+    max-height: 1rem;
+    color: #fff;
+    filter: invert(1);
+}
+.logo {
+    font-size: 2rem;
+    letter-spacing: -3px;
+}
+.logo span{
+    font-size: 1.1rem;
+    color:orange;
+}
+/* menu */
+/* header information */
+.headInformation {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10rem;
+    flex-wrap: wrap;
+    
+}
+/* infome */
+.headInformation .infoMe{
+    max-width: 330px;
+    flex-basis: 330px;
+}
+
+.headInformation .infoMe h1{
+    font-size: 3rem;
+}
+
+.headInformation .infoMe .ponto{
+    font-size: 47px;
+    border-radius: 16px;
+    color: orange;
+}
+
+.headInformation .infoMe .sublinhado {
+    margin-top: 1rem;
+    width: 6rem;
+    height: 1px;
+    background: orange;
+}
+
+.headInformation .infoMe .linksSociais {
+    margin-top: 1.2rem;
+}
+
+.headInformation .infoMe .linksSociais ul {
+    display: flex;
+    gap:25px;
+}
+
+.headInformation .infoMe .linksSociais ul li a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.headInformation .infoMe .botaoContato{
+    margin-top: 4rem;
+}
+.headInformation .infoMe .botaoContato .btnContatoHeader {
+    border: 2px solid orange;
+    color: orange;
+    background: transparent;
+    padding: 10px 65px;
+}        
+/* infome */
+/* img */
+.headInformation .centralImage {
+    flex-basis: 330px;
+}
+.headInformation .centralImage .imgBox img{
+    max-width: 20rem;
+}
+
+.headInformation .centralImage .imgBox img{
+    max-width: 20rem;
+}
+/* img */
+/* introduction */
+.headInformation .introduction{
+    max-width: 25rem;
+    flex-basis: 330px;
+}
+
+.headInformation h4 {
+    color: orange;
+    letter-spacing: 2px;
+}
+
+.headInformation h4 {
+    color: orange;
+    letter-spacing: 2px;
+}
+
+.headInformation h2 {
+    font-size: 2.4rem;
+    margin-top: 1rem;
+}
+
+.headInformation p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.headInformation .saibaMais {
+    margin-top: 1rem;
+    color: orange;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/* introduction */
+/* header information */
+/* serviços */
+    .services{
+        text-align: center;
+        padding-top: 25vh;
+        padding-bottom: 25vh;
+    }
+
+    .services .title{
+        margin-top: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .services .title p {
+        max-width: 50vw;
+    }
+    
+    .services .cards {
+        margin-top: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    .services .cards .card {
+        min-width: 250px;
+        min-height: 250px;
+        flex-basis: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4c4c4c;
+        transition: .3s;
+        opacity: 0;
+    }
+    
+    .services .cards .card .subTitle {
+        padding-bottom: 1rem;
+    }
+    
+    .services .cards .card .number {
+        font-size: 1.9rem;
+        padding-top: 1rem;;
+    }
+    
+    .services .cards .card .imgBox img{
+        width: 142px;
+        height: 142px;
+        filter: invert(1);
+    }
+/* serviços */
+/* portifolio */
+    .portifolio{
+        text-align: center;
+        padding-top: 25vh;
+        padding-bottom: 25vh;
+    }
+
+    .portifolio .title{
+        margin-top: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .portifolio .title p {
+        max-width: 50vw;
+    }
+    
+    .portifolio .galerry-bar{
+        margin-top: 2rem;
+    }
+
+    .portifolio .galerry-bar ul{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .portifolio .galerry-bar ul a{
+        color: #fff;
+        padding: 10px;
+    }
+
+    .portifolio .galerry-bar ul a.active{
+        border-bottom: 2px solid orange;
+    }
+
+    .portifolio .galeryPhoto{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,200px);
+        grid-template-areas:
+            "p1 p3 p3"
+            "p4 p4 p2";
+        gap: 10px;
+        max-width: 50vw;
+        margin: 2rem auto;
+        
+    }
+    .portifolio .galeryPhoto .galleryItem{
+        background-color: darkcyan;
+    }
+
+    .portifolio .galeryPhoto .p1{
+        position: relative;
+        grid-area: p1;
+        background-image: url(./img/portifolio/project1.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: .5s linear;
+    }
+
+    .portifolio .galeryPhoto .p2{
+        position: relative;
+        grid-area: p2;
+        background-image: url(./img/portifolio/project2.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: .5s linear;
+    }
+    
+    .portifolio .galeryPhoto .p3{
+        position: relative;
+        grid-area: p3;
+        background-image: url(./img/portifolio/project3.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: .5s linear;
+    }
+    
+    .portifolio .galeryPhoto .p4{
+        position: relative;
+        grid-area: p4;
+        background-image: url(./img/portifolio/project4.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: .3s linear;
+    }
+
+    .portifolio .galeryPhoto .overlay {
+        content: '';
+        position: absolute;
+        transition: .4s ease;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 0%;
+        opacity: 1;
+        background-color: rgb(76 76 76);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        overflow: hidden;
+        opacity: 0;
+    }
+    
+    .portifolio .galeryPhoto .overlay .infoBox
+    {
+        display: flex;
+        border: 0px solid red;
+        height: 4rem;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .portifolio .galeryPhoto .overlay .infoBox .btn-portifolio{
+        padding: 6px;
+        border: 0;
+        background: #ff5722;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 2px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    
+    .p1:hover > #ov1,.p2:hover > #ov2,.p3:hover > #ov3,.p4:hover > #ov4 
+    {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+/* portifolio */
+/* contact */
+    .contact{
+        text-align: center;
+        padding-top: 25vh;
+        padding-bottom: 25vh;
+    }
+
+    .contact .title{
+        margin-top: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .contact .title p {
+        max-width: 50vw;
+    }
+    
+    .contact .cards{
+        max-width: 80vw;
+        display: flex;
+        margin: 5rem auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .contact .card{
+        background: #4c4c4c;
+        display: flex;
+        padding: 15px;
+        width: 16rem;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .contact .card a{
+        color: #fff;
+    }
+/* contact */
+/*footer*/
+footer{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+/*footer*/
+/* animation */
+.animation{
+    /* visibility: hidden; */
+    animation: showUp .5s linear;
+}
+@keyframes showUp {
+   from{ opacity: 0; transform: translateY(5rem); }
+   to {  opacity: 1; transform: translateY(0rem); }     
+}
+@keyframes showDown {
+   from{ opacity: 0; transform: translateY(-5rem); }
+   to {  opacity: 1; transform: translateY(0rem); }     
+}
+@keyframes showLeft {
+   from{ opacity: 0; transform: translateX(-5rem); }
+   to {  opacity: 1; transform: translateX(0rem); }     
+}
+@keyframes showRight {
+   from{ opacity: 0; transform: translateX(5rem); }
+   to {  opacity: 1; transform: translateX(0rem); }     
+}
+.animeme{}
+.show{
+    opacity: 1 !important;
+}
+
+
+/* animação head */
+    .headInformation .infoMe {
+        animation: showLeft .5s linear;
+    }
+    
+    .headInformation .centralImage {
+        animation: showDown .5s linear;
+    }
+    
+    .headInformation .introduction {
+        animation: showRight .5s linear;
+    }            
+/* animação head */
+/* animação das areas competentes */
+.animationConteiner .show{
+    animation: showUp calc(.2s * var(--i)) linear;
+}
+/* animação das areas competentes */
+/* contatos card */
+.animationConteinerContact .show{
+    animation: showUp calc(.2s * var(--i2)) linear;
+}
+/* contatos card */
+/* animation */ 
+/* mobile media query*/
+.mobile-menu{
+    display: none;
+}
+.menuArea{
+    display: none;
+}
+.mobile-menu span{
+    background-color: #000;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    width: 3rem;
+}
+
+@media screen and (max-width:768px) {
+    .navHead{
+        justify-content: flex-end;
+        margin: 0px;
+    }
+
+    .mobile-menu{
+        display: flex;
+        width: 3rem;
+        height: 2rem;
+        background: #7fffd400;
+        flex-direction: column;
+        margin-right: 1rem;
+    } 
+    .mobile-menu span {
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #ddd;
+    }
+    
+    .headInformation {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headInformation .infoMe {
+        
+    }
+    .headInformation .infoMe .ponto {
+        display: none;
+    }
+    .headInformation .infoMe h1 {
+        font-size: 2rem;
+    }
+    .headInformation .introduction{
+        text-align: center;
+    } 
+    .navHead .logo,.navHead .menuHorizontal { display: none; }
+    .portifolio .galeryPhoto{
+        min-width: 90vw;
+    }
+    
+    .menuArea{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 52px;
+        background: #7e7e7e;
+        width: 0vw;
+        overflow: hidden;
+        height: calc(100% - 52px);
+        transition: .3s linear;
+    }
+    .menuArea.active{
+        width: 45vw;
+    }
+    
+    .menuArea ul li{
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 1.5rem;
+        border-bottom: 2px solid orange;
+    }
+    .menuArea ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+/* mobile media query*/
